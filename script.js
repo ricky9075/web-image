@@ -119,10 +119,10 @@ window.onload = () => {
       if (res.message) {
         message = res.message
       } else {
-        // message = `upload success: <a target=”_blank” href="${res.content.html_url}?raw=true">${res.content.html_url}?raw=true</a>`
+        // message = `upload success: <a target="_blank" href="${res.content.html_url}?raw=true">${res.content.html_url}?raw=true</a>`
         let rawURL =  res.content.html_url.replace('github.com/ricky9075/web-image/blob/main/', 'raw.githubusercontent.com/ricky9075/web-image/main/')
         navigator.clipboard.writeText(rawURL)
-        message = `upload success: <a target=”_blank” href="${rawURL}">${rawURL}</a>`
+        message = `upload success: <a target="_blank" href="${rawURL}">${rawURL}</a>`
 
       }
    
